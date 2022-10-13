@@ -1,0 +1,19 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+. "$HOME/.cargo/env"
+
+alias yay="paru"
+alias stow="chezmoi"
+
+
+export PATH="$HOME/.local/bin:$PATH"
+export QT_QPA_PLATFORMTHEME='gnome'
+export PATH=$PATH:/home/jake/.spicetify
+export EDITOR=hx
